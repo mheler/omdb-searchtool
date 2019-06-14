@@ -1,4 +1,4 @@
-# ombd-searchtool
+# omdb-searchtool
 A really simple bash script that runs in Docker to query Rotten Tomato results from The Open Movie Database (OMDb).
 
 # Build instructions
