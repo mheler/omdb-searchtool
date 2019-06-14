@@ -1,12 +1,11 @@
 # ombd-searchtool
-A really simple bash script in Docker to query Rotten Tomato results from The Open Movie Database (OMDb).
+A really simple bash script that runs in Docker to query Rotten Tomato results from The Open Movie Database (OMDb).
 
 # Build instructions
-git clone https://github.com/mheler/omdb-searchtool.git
-docker build omdb-searchtool -t omdb-searchtool
+git clone https://github.com/mheler/omdb-searchtool.git; docker build omdb-searchtool -t omdb-searchtool
 
 # Runtime instructions
-docker run -e API_KEY="OMDB API KEY" -e MOVIE="MOVIE TITLE" omdb-searchtool
+docker run -e API_KEY="OMDB API KEY" omdb-searchtool "Movie Name"
 
 # Runetime example
-docker run -e API_KEY="abc1234" -e MOVIE="Salt" omdb-searchtool
+docker run -e API_KEY="abc1234" omdb-searchtool "Men in Black"
